@@ -1,0 +1,28 @@
+.nav {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.nav ul {
+  display: flex;
+  gap: 1rem;
+  /* color: #333; */
+}
+.nav li {
+  list-style: none;
+  border-radius: 15px;
+}
+.nav a:link,
+.nav a:visited {
+  display: block;
+  color: var(--color-dark--1);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 0.5rem 1.2rem;
+  border-radius: 15px;
+}
+.nav a:global(.active) {
+  background-color: var(--color-brand--1);
+  color: #000;
+}

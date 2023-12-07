@@ -1,0 +1,87 @@
+.element {
+  margin: 0 auto;
+  padding: 2.5rem 5rem;
+  background-color: var(--color-white);
+  min-height: 100vh;
+  max-width: 120rem;
+}
+.element section {
+  padding: 2.5rem 3.2rem;
+  margin-top: 3rem;
+}
+.element h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+}
+
+.element .plans {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.2rem;
+}
+.element .plans div:nth-of-type(2)::after {
+  content: "Best choice";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  width: 100px;
+  top: 0;
+  left: 50;
+  transform: translate(0, -50%);
+  height: 30px;
+  position: absolute;
+  color: var(--color-white);
+  background-color: var(--color-brand--2);
+  border-radius: 5px;
+}
+.element .plan {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 2rem;
+  position: relative;
+  /* justify-content: center; */
+  align-items: center;
+  min-height: 400px;
+  -webkit-box-shadow: 5px 5px 20px -13px rgba(84, 84, 84, 1);
+  -moz-box-shadow: 5px 5px 20px -13px rgba(84, 84, 84, 1);
+  box-shadow: 5px 5px 20px -13px rgba(84, 84, 84, 1);
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+.element .prize {
+  font-size: 3rem;
+}
+.element .paying {
+  margin-bottom: 5rem;
+}
+.element .list {
+  list-style: none;
+  display: flex;
+  margin-top: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 1rem;
+}
+.element .list_desc {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.element .icon {
+  color: var(--color-brand--2);
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+.element .plan:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,24 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+}
+.nav a:link,
+.nav a:visited {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--color-dark--1);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.nav a:global(.active) {
+  color: var(--color-brand--2);
+}
