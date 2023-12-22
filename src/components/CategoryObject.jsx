@@ -39,8 +39,8 @@ function CategoryObject({ category, docs }) {
         <li className={styles.categoryObj}>
           <div className={styles.categoryBox}>
             <span className={styles.catCount}>{docs.length}</span>
-            {category.name.length >= 10
-              ? category.name.slice(0, 4) + "..."
+            {category.name.length >= 9
+              ? category.name.slice(0, 5) + "..."
               : category.name}
           </div>
         </li>

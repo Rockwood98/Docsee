@@ -115,6 +115,7 @@ function AddForm({ setShowForm }) {
               className={styles.selectCategory}
               type="text"
               id="name"
+              minLength="2"
               maxLength="10"
               placeholder="Maximum length 10"
               onChange={(e) => setName(e.target.value)}
@@ -123,9 +124,11 @@ function AddForm({ setShowForm }) {
             />
             <div
               onClick={() => {
-                console.log({ name });
-                mutateCategory({ name });
-                setName("");
+                if (name !== "") {
+                  console.log({ name });
+                  mutateCategory({ name });
+                  setName("");
+                }
               }}
               className={styles.btnSave}>
               Save
