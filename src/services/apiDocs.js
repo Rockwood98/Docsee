@@ -53,7 +53,3 @@ export async function deleteDoc(id) {
 
   return data;
 }
-
-// https://dsgdstswuibqxnpetshi.supabase.co/storage/v1/object/public/docs/${
-//         fileId + name
-//       }`

@@ -12,6 +12,7 @@ import CategoriesList from "./components/CategoriesList";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import AlertToaster from "./components/AlertToaster";
+import CategoryInfo from "./components/CategoryInfo";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -66,6 +67,7 @@ function App() {
             <Route path="docs" element={<DocsList />} />
             <Route path="docs/:id" element={<DocInfo />} />
             <Route path="categories" element={<CategoriesList />} />
+            <Route path="categories/:id" element={<CategoryInfo />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>

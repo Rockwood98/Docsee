@@ -96,8 +96,9 @@ function AddForm({ setShowForm }) {
                 message: "Category is required",
               },
             })}
-            id="category">
-            <option selected value="0" disabled>
+            id="category"
+            defaultValue={0}>
+            <option disabled value="0">
               Please choose an category
             </option>
             {categories?.map((category) => (
@@ -114,6 +115,8 @@ function AddForm({ setShowForm }) {
               className={styles.selectCategory}
               type="text"
               id="name"
+              maxLength="10"
+              placeholder="Maximum length 10"
               onChange={(e) => setName(e.target.value)}
               value={name}
               disabled={isLoadingCategory}
