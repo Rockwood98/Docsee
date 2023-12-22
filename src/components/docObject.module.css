@@ -3,16 +3,42 @@
 .docObj:visited {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   text-decoration: none;
   cursor: pointer;
   padding: 0.1rem 1.5rem;
   font-size: 1.8rem;
+  border-radius: 5px;
   border-left: 5px solid var(--color-brand--2);
+  color: inherit;
+  transition: border-left 0.3s;
 }
 .docObj--active {
+  border-left: 5px solid var(--color-brand--1);
+}
+.docObj:hover {
   border-left: 5px solid var(--color-brand--1);
 }
 .name {
   font-size: 1.7rem;
   font-weight: 500;
+}
+.docsContainer {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 2.2rem;
+}
+.iconDel {
+  font-size: 2.2rem;
+  cursor: pointer;
+  color: var(--color-brand--2);
+  transition: color 0.3s;
+}
+.iconDel:hover {
+  color: #d2122e;
+}
+.button {
+  display: block;
+  border: none;
+  background: none;
 }

@@ -1,0 +1,22 @@
+.categoryObj,
+.categoryObj:link,
+.categoryObj:visited {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+
+  background-color: var(--color-dark--2);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  border-left: 5px solid var(--color-brand--2);
+}
+.categoryObj--active {
+  border-left: 5px solid var(--color-brand--1);
+}
+.name {
+  font-size: 1.7rem;
+  font-weight: 500;
+}

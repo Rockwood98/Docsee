@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  margin: 9.6rem 4.8rem 4.8rem 4.8rem;
+}
+.docContainer {
+  width: 100%;
+  border: none;
+}
+.spinner {
+  margin: 0 auto;
+  justify-self: center;
+  align-self: center;
+}

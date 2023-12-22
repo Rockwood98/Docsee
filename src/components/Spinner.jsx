@@ -1,15 +1,7 @@
 import { PulseLoader } from "react-spinners";
 
-function Spinner() {
-  return (
-    <PulseLoader
-      color="#0292c8"
-      size={15}
-      cssOverride={{
-        marginTop: "3rem",
-      }}
-    />
-  );
+function Spinner({ styles, size = 15, color = "#0292c8" }) {
+  return <PulseLoader className={styles} color={color} size={size} />;
 }
 
 export default Spinner;

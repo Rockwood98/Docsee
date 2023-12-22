@@ -1,0 +1,22 @@
+.docInfo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  gap: 2rem;
+  /* justify-content: center; */
+}
+.docInfo li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  gap: 2rem;
+}
+.docInfo li span {
+  font-size: 1.4rem;
+  text-align: right;
+  font-weight: 500;
+  /* cursor: pointer; */
+}

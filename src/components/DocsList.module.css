@@ -12,8 +12,13 @@
 
   border-radius: 15px;
   padding: 0.5rem 2.2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 .docsList::-webkit-scrollbar {
   width: 0;
+}
+.icon {
+  font-size: 2rem;
 }

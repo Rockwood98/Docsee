@@ -1,0 +1,33 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 7px;
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.primary {
+  background-color: var(--color-brand--1);
+  color: var(--color-white);
+  font-weight: 600;
+}
+.primary-big {
+  width: 100%;
+  background-color: var(--color-brand--1);
+  color: var(--color-white);
+  padding: 1.6rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.secondary {
+  color: var(--color-dark--1);
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 1.4rem;
+}

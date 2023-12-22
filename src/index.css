@@ -4,12 +4,11 @@
 :root {
   --color-brand--1: #0292c8;
   --color-brand--2: #034c73;
-
   --color-white: #fff;
-
   --color-slightly-dark: #f9fafb;
   --color-dark--1: #545454;
   --color-dark--2: #ddd;
+  --color-red: hsl(0, 94%, 66%);
 }
 
 * {

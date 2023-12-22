@@ -1,0 +1,124 @@
+.addForm {
+  /* background-color: var(--color-slightly-dark); */
+  padding: 2rem 3.2rem;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 20rem);
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.formBox {
+  width: 100%;
+  padding: 1.6rem 2.2rem;
+}
+
+.formDesc {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.fileDesc {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+}
+.fileBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: 1px solid #ddd;
+  padding: 1.2rem 2rem;
+  color: var(--color-brand--1);
+  border-radius: 7px;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+.fileBtn:hover {
+  background-color: var(--color-brand--1);
+  color: white;
+}
+.fileIcon {
+  font-size: 2.4rem;
+}
+.selectCategory {
+  font-size: 1.6rem;
+  font-weight: 400;
+  border: 1px solid #ddd;
+  padding: 1.2rem 2rem;
+  width: 100%;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.categoryBox {
+  padding: 1.2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.categoryInput {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 4fr 1fr;
+}
+
+/* .categoryInput {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1rem 1.2rem;
+  background-color: transparent;
+  border: 2px solid var(--color-dark--2);
+  border-radius: 7px;
+} */
+
+.addForm .categoryBtn {
+  list-style: none;
+  border-radius: 15px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.5rem 1.2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  background-color: var(--color-dark--2);
+}
+.btnSave {
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border-radius: 7px;
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: var(--color-dark--1);
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.visibility {
+  opacity: 0;
+}
+
+.error,
+.errorBorder {
+  color: var(--color-red);
+}
+.errorBorder {
+  border: 1px solid var(--color-red);
+}

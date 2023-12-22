@@ -1,0 +1,13 @@
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 2rem 1.2rem;
+}
+.icon {
+  font-size: 2rem;
+  color: var(--color-brand--1);
+}
