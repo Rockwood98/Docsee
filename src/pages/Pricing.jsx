@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import PageNav from "../components/PageNav";
 import styles from "./Pricing.module.css";
 import { HiMiniCheckCircle } from "react-icons/hi2";
+import Button from "../components/Button";
 function Pricing() {
   return (
     <main className={styles.element}>
@@ -12,8 +13,8 @@ function Pricing() {
           <div className={styles.plan}>
             <h3 className={styles.prize}>FREE</h3>
             <p className={styles.paying}>Every month</p>
-            <Link to="/" className="btn-prmiary-dark">
-              Try for free
+            <Link to="/">
+              <Button type="primary-dark">Try for free</Button>
             </Link>
             <ul className={styles.list}>
               <li className={styles.list_desc}>
@@ -27,8 +28,8 @@ function Pricing() {
           <div className={styles.plan}>
             <h3 className={styles.prize}>19.99$</h3>
             <p className={styles.paying}>Every month</p>
-            <Link to="/" className="btn-prmiary">
-              Buy now
+            <Link to="/">
+              <Button type="primary">Buy now</Button>
             </Link>
             <ul className={styles.list}>
               <li className={styles.list_desc}>
@@ -49,8 +50,8 @@ function Pricing() {
           <div className={styles.plan}>
             <h3 className={styles.prize}>39.99$</h3>
             <p className={styles.paying}>Every month</p>
-            <Link to="/" className="btn-prmiary-dark">
-              Buy now
+            <Link to="/">
+              <Button type="primary-dark">Buy now</Button>
             </Link>
             <ul className={styles.list}>
               <li className={styles.list_desc}>

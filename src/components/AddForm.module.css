@@ -1,11 +1,12 @@
 .addForm {
-  /* background-color: var(--color-slightly-dark); */
+  background-color: var(--color-slightly-dark);
   padding: 2rem 3.2rem;
   position: absolute;
   top: 50%;
   left: calc(50% + 20rem);
   transform: translate(-50%, -50%);
   border-radius: 15px;
+  z-index: 100;
 }
 .formContainer {
   display: flex;

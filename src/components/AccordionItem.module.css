@@ -1,0 +1,35 @@
+.accordionTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.2rem 0 2.2rem 0;
+  border-top: 1px solid #ddd;
+  cursor: pointer;
+  font-weight: 500;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.accordionContent {
+  margin-bottom: 3.2rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: var(--color-dark--1);
+}
+
+.accordionTitle:hover {
+  color: var(--color-brand--1);
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.iconUp,
+.iconDown {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--color-brand--1);
+}
+.iconUp {
+  color: var(--color-red);
+}

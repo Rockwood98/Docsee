@@ -1,4 +1,5 @@
 import PageNav from "../components/PageNav";
+import Accordion from "../components/Accordion";
 import styles from "./Product.module.css";
 
 function Product() {
@@ -29,6 +30,7 @@ function Product() {
             </p>
           </div>
         </div>
+        <Accordion></Accordion>
       </section>
     </main>
   );

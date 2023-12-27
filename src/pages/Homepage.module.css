@@ -24,3 +24,23 @@
   font-weight: 300;
   text-align: center;
 }
+.homeIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  font-size: 10rem;
+}
+.homeIcon {
+  border: 1px solid var(--color-dark--2);
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: var(--color-slightly-dark);
+  color: var(--color-dark--1);
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+.homeIcon:hover {
+  color: var(--color-brand--1);
+  transform: scale(1.2);
+}

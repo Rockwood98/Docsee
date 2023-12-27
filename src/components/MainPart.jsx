@@ -1,11 +1,15 @@
 import Container from "./Container";
+import Header from "./Header";
 import styles from "./MainPart.module.css";
-// import Container from "./Container";
+
 function MainPart() {
   return (
-    <div className={styles.mainPart}>
-      <Container />
-    </div>
+    <>
+      <Header />
+      <div className={styles.mainPart}>
+        <Container />
+      </div>
+    </>
   );
 }
 

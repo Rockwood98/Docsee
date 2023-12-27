@@ -2,8 +2,7 @@
   margin: 0 auto;
   padding: 2.5rem 5rem;
   background-color: var(--color-white);
-  min-height: 100vh;
-  max-width: 120rem;
+  max-width: 100rem;
 }
 .login section {
   padding: 2.5rem 3.2rem;
@@ -20,8 +19,6 @@
   display: flex;
   flex-direction: column;
   padding: 2.5rem 2rem;
-  /* height: 70vh; */
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -32,13 +29,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .login p {
   color: var(--color-white);
   font-size: 1.6rem;
 }
 .login h2 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   color: var(--color-white);
   text-transform: uppercase;
 }
@@ -73,7 +71,7 @@
   border-left: 4px solid var(--color-brand--1);
 }
 .login .account_info {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: var(--color-brand--1);
   cursor: pointer;
 }
@@ -85,4 +83,23 @@
 }
 .login label {
   color: var(--color-dark-1);
+}
+form {
+  position: relative;
+}
+.login .labelCheck,
+.login .labelCheckPass,
+.login .labelCheckConf {
+  position: absolute;
+  top: 18%;
+  left: 0;
+  color: var(--color-red);
+}
+
+.login .labelCheckPass {
+  top: 45%;
+}
+
+.login .labelCheckConf {
+  top: 71%;
 }
