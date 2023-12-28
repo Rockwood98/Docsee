@@ -24,6 +24,24 @@
 
 @media (max-width: 44em) {
   .header {
-    top: 40rem;
+    margin-top: 0.2rem;
+    margin-right: 0.2rem;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .headerInfo {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .header {
+    margin-top: 0.2rem;
+    margin-right: 0.2rem;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .headerInfo {
+    font-size: 1.6rem;
   }
 }

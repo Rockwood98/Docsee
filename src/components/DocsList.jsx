@@ -44,7 +44,7 @@ function DocsList() {
     );
   return (
     <>
-      <Button type="secondary">
+      <Button type="secondary-light">
         <HiArrowsUpDown /> Sort
       </Button>
       <ul className={styles.docsList}>

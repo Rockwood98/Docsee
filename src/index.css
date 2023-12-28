@@ -10,7 +10,8 @@
   --color-dark--2: #ddd;
   --color-red: hsl(0, 94%, 66%);
 
-  --color-brand--2-op: #034c73ef;
+  --color-brand--2-op: #034c73f8;
+  --color-slightly-dark-op: #f9fafb65;
 }
 
 * {

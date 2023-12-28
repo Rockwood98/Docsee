@@ -50,9 +50,11 @@ function PageNav() {
             <li>
               <NavLink to="/product">About us</NavLink>
             </li>
-            <li>
-              {!user?.id?.length > 0 && <NavLink to="/login">Log in</NavLink>}
-            </li>
+            {!user?.id?.length > 0 && (
+              <li>
+                <NavLink to="/login">Log in</NavLink>
+              </li>
+            )}
           </ul>
         </nav>
       )}

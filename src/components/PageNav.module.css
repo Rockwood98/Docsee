@@ -29,7 +29,7 @@
   right: 5%;
   border: none;
   background: none;
-  font-size: 2.8rem;
+  font-size: 4rem;
 
   cursor: pointer;
   z-index: 1000;
@@ -47,7 +47,7 @@
   font-weight: 600;
   cursor: pointer;
   text-transform: none;
-  margin-bottom: 5rem;
+  margin-top: 4.8rem;
 }
 .nav .logoDocsee span {
   color: var(--color-brand--1);
@@ -70,9 +70,9 @@
     top: 0;
     right: 0;
     left: 0;
-    height: 50vh;
+    height: 100vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: var(--color-brand--2-op);
     z-index: 100;
@@ -81,14 +81,25 @@
   }
   .nav ul {
     flex-direction: column;
-    /* margin-top: 8rem; */
+    margin-top: 10rem;
+    gap: 4.8rem;
     align-items: center;
     justify-content: center;
   }
   .nav a:link,
   .nav a:visited {
     color: var(--color-white);
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+  .nav li {
+    width: 80vw;
+    padding-bottom: 4.8rem;
+    text-align: center;
+    border-bottom: 1px solid var(--color-slightly-dark-op);
+  }
+  .nav li:first-child {
+    border-top: 1px solid var(--color-slightly-dark-op);
+    padding-top: 4.8rem;
   }
   .mobileNavBtn {
     display: block;

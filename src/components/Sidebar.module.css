@@ -28,12 +28,22 @@
 
 @media (max-width: 44em) {
   .sidebar {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
     height: 40rem;
     padding: 0;
   }
-  .footer {
+  .sidebar .logoDiv {
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+    align-self: flex-start;
+  }
+  .sidebar .navDiv {
+    margin-top: -5rem;
+  }
+  .sidebar .footer {
     position: absolute;
     margin: 0;
     left: 50%;
@@ -41,5 +51,14 @@
     color: #000;
     z-index: 10;
     transform: translateX(-50%);
+  }
+}
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .sidebar .navDiv {
+    margin-top: 0;
   }
 }

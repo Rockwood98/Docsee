@@ -29,6 +29,6 @@
 @media (max-width: 44em) {
   .app {
     grid-template-columns: 1fr;
-    grid-template-rows: 40rem 1fr;
+    grid-template-rows: 42rem 1fr;
   }
 }

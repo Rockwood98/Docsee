@@ -15,8 +15,12 @@ function Sidebar() {
 
   return (
     <div className={styles.sidebar}>
-      <Logo />
-      <AppNav />
+      <div className={styles.logoDiv}>
+        <Logo />
+      </div>
+      <div className={styles.navDiv}>
+        <AppNav />
+      </div>
       <Outlet />
       <Footer />
     </div>
