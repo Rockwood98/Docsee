@@ -20,3 +20,26 @@
   font-weight: 500;
   /* cursor: pointer; */
 }
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .docInfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* align-items: end; */
+    width: 50%;
+    gap: 1rem;
+    margin: 0 auto;
+  }
+  .docInfo li {
+  }
+}

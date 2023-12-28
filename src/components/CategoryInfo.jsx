@@ -21,13 +21,13 @@ function CategoryInfo() {
   const x = useParams();
 
   console.log(x);
-  const categoryInfo = category?.filter((cat) => cat.id == x.id);
+  const categoryInfo = category?.filter((cat) => cat.id == x.el);
   const documentInfo = docs?.filter(
-    (doc) => doc.category == categoryInfo[0]?.id
+    (doc) => doc?.category == categoryInfo[0]?.id
   );
 
   if (isLoading) return <Spinner />;
-  if (document)
+  if (documentInfo)
     return (
       <>
         <div className={styles.categoryContainer}>

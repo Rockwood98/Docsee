@@ -22,3 +22,13 @@
 .icon {
   font-size: 2rem;
 }
+
+@media (max-width: 44em) {
+  .docsList {
+    width: 80%;
+    height: 20rem;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: flex-start;
+  }
+}

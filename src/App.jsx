@@ -47,7 +47,7 @@ function App() {
             <Route path="docs" element={<DocsList />} />
             <Route path="docs/:id" element={<DocInfo />} />
             <Route path="categories" element={<CategoriesList />} />
-            <Route path="categories/:id" element={<CategoryInfo />} />
+            <Route path="categories/:el" element={<CategoryInfo />} />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>

@@ -26,3 +26,19 @@
   background-color: var(--color-brand--1);
   color: #000;
 }
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .nav ul {
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
+  }
+  .nav {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+}

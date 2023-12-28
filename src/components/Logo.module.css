@@ -1,3 +1,15 @@
 .logo {
   height: 5.2rem;
 }
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .logo {
+    position: absolute;
+    left: 50%;
+    top: 1%;
+    transform: translateX(-50%);
+  }
+}

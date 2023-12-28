@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 1rem;
   align-items: center;
   width: 100%;
   max-height: 45vh;
@@ -14,14 +15,15 @@
   margin-top: 1rem;
 }
 .categoryContainer::-webkit-scrollbar {
-  width: 0;
+  width: 1;
 }
 .heading {
   font-size: 1.8rem;
   font-weight: 500;
   border-bottom: 3px solid var(--color-brand--1);
-  padding-bottom: 1rem;
-  margin-bottom: 1.5rem;
+  /* padding-bottom: 1rem; */
+  margin-top: 2rem;
+  /* margin-bottom: 1.5rem; */
 }
 .listBox {
   display: flex;
@@ -31,4 +33,22 @@
 .listEl {
   list-style: none;
   font-size: 1.4rem;
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  .categoryContainer {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 44em) {
+  .categoryContainer {
+    max-height: 20vh;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: flex-start;
+  }
 }

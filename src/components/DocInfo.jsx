@@ -46,7 +46,11 @@ function DocInfo() {
             Last modification:<span>{document[0]?.lastModified}</span>
           </li>
         </ul>
-        <Button type="secondary" clickEvent={() => navigate("/app/docs")}>
+
+        <Button
+          addStyles={styles.buttonPos}
+          type="secondary"
+          clickEvent={() => navigate("/app/docs")}>
           <HiArrowSmallLeft /> Back
         </Button>
       </>

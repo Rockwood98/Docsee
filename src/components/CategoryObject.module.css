@@ -66,3 +66,14 @@ a {
 .container {
   position: relative;
 }
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  .categoryBox {
+    justify-content: center;
+    gap: 3rem;
+  }
+}

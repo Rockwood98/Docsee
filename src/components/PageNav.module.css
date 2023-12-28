@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: transparent;
+  position: relative;
 }
 
 .nav ul {
@@ -21,4 +22,75 @@
 }
 .nav a:global(.active) {
   color: var(--color-brand--2);
+}
+.mobileNavBtn {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  border: none;
+  background: none;
+  font-size: 2.8rem;
+
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+}
+.colorDark {
+  color: inherit;
+}
+.colorWhite {
+  color: var(--color-white);
+}
+.nav .logoDocsee {
+  color: var(--color-white);
+  font-size: 3.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: none;
+  margin-bottom: 5rem;
+}
+.nav .logoDocsee span {
+  color: var(--color-brand--1);
+}
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+@media (max-width: 44em) {
+  .nav {
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
+}
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+@media (max-width: 34em) {
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-brand--2-op);
+    z-index: 100;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+  .nav ul {
+    flex-direction: column;
+    /* margin-top: 8rem; */
+    align-items: center;
+    justify-content: center;
+  }
+  .nav a:link,
+  .nav a:visited {
+    color: var(--color-white);
+    font-size: 2rem;
+  }
+  .mobileNavBtn {
+    display: block;
+  }
 }

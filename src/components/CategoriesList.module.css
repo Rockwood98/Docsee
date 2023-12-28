@@ -17,3 +17,26 @@
 /* .icon {
   font-size: 2rem;
 } */
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  .categoriesList {
+    grid-template-columns: 1fr;
+  }
+}
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .categoriesList {
+    width: 80%;
+    height: 28rem;
+    margin: 4rem auto 0 auto;
+    grid-template-columns: 1fr 1fr;
+    align-content: flex-start;
+  }
+}

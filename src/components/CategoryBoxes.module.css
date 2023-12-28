@@ -1,0 +1,57 @@
+.categoryBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  background-color: var(--color-slightly-dark);
+  border-radius: 7px;
+  max-height: 20rem;
+  padding: 1.2rem 2.2rem;
+  -webkit-box-shadow: 0px 4px 10px -7px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 4px 10px -7px rgba(66, 68, 90, 1);
+  box-shadow: 0px 4px 10px -7px rgba(66, 68, 90, 1);
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.categoryBox h2 {
+  align-self: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: inherit;
+}
+.categoryBox p {
+  font-size: 1.4rem;
+}
+.categoryBox a,
+.categoryBox a:visited,
+.categoryBox a:link {
+  align-self: center;
+  font-size: 3.2rem;
+  color: inherit;
+  transition: color 0.3s;
+}
+.categoryBox a:hover {
+  color: var(--color-brand--1);
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  .categoryBox h2 {
+    font-size: 1.4rem;
+  }
+}
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  .categoryBox h2 {
+    font-size: 1.4rem;
+  }
+  .categoryBox p {
+    font-size: 1.2rem;
+  }
+}

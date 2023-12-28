@@ -9,6 +9,8 @@
   --color-dark--1: #545454;
   --color-dark--2: #ddd;
   --color-red: hsl(0, 94%, 66%);
+
+  --color-brand--2-op: #034c73ef;
 }
 
 * {
@@ -24,4 +26,24 @@ body {
   color: var(--color-dark--1);
   font-weight: 400;
   line-height: 1.6;
+}
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+}
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
 }

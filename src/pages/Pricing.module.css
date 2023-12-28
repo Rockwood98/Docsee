@@ -31,11 +31,11 @@
   font-size: 1.2rem;
   font-weight: 900;
   text-transform: uppercase;
-  width: 100px;
+  width: 10rem;
   top: 0;
   left: 50;
   transform: translate(0, -50%);
-  height: 30px;
+  height: 3rem;
   position: absolute;
   color: var(--color-white);
   background-color: var(--color-brand--2);
@@ -48,7 +48,7 @@
   position: relative;
   /* justify-content: center; */
   align-items: center;
-  min-height: 400px;
+  min-height: 40rem;
   -webkit-box-shadow: 5px 5px 20px -13px rgba(84, 84, 84, 1);
   -moz-box-shadow: 5px 5px 20px -13px rgba(84, 84, 84, 1);
   box-shadow: 5px 5px 20px -13px rgba(84, 84, 84, 1);
@@ -84,4 +84,53 @@
 }
 .element .plan:hover {
   transform: scale(1.05);
+}
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+@media (max-width: 59em) {
+  .element .plans {
+    gap: 1rem;
+  }
+  .element .plan {
+    min-height: 30rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+@media (max-width: 44em) {
+  .element .plans {
+    gap: 0rem;
+  }
+
+  .element .prize {
+    font-size: 2.6rem;
+  }
+  .element {
+    padding: 2.5rem 0;
+  }
+}
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .element {
+    padding: 1.2rem 1.2rem;
+  }
+  .element .plans {
+    grid-template-columns: 1fr;
+  }
+  .element .plan {
+    min-height: 40rem;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 4.8rem;
+  }
+  .element .prize {
+    font-size: 3rem;
+  }
 }

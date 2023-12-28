@@ -1,6 +1,34 @@
 .app {
   height: 100vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: 40rem 1fr;
   position: relative;
   overscroll-behavior-y: none;
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  .app {
+    grid-template-columns: 35rem 1fr;
+  }
+}
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .app {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40rem 1fr;
+  }
 }

@@ -2,7 +2,7 @@
   margin: 0 auto;
   padding: 2.5rem 5rem;
   background-color: var(--color-white);
-  max-width: 100rem;
+  max-width: 120rem;
 }
 .login section {
   padding: 2.5rem 3.2rem;
@@ -14,6 +14,8 @@
   gap: 3;
   min-height: 60vh;
   background-color: var(--color-slightly-dark);
+  max-width: 80rem;
+  margin: 0 auto;
 }
 .login .login_tab {
   display: flex;
@@ -97,9 +99,60 @@ form {
 }
 
 .login .labelCheckPass {
-  top: 45%;
+  top: 43%;
 }
 
 .login .labelCheckConf {
-  top: 71%;
+  top: 68%;
+}
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  .login .labelCheckPass {
+    top: 44%;
+  }
+
+  .login .labelCheckConf {
+    top: 70%;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  .login {
+    padding: 2.5rem 0rem;
+  }
+}
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .login .login_form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 1;
+    max-width: 100%;
+  }
+  .login .login_panel {
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 2.5rem;
+  }
+  .login form {
+    width: 80%;
+  }
+  .login .image {
+    height: 30vh;
+    background-position: bottom;
+    background-size: cover;
+  }
 }
