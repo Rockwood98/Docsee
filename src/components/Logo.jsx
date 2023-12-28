@@ -5,7 +5,7 @@ function Logo() {
   return (
     <Link to="/">
       <img
-        src="../public/logo-light.png"
+        src="../../public/logo-light.png"
         alt="DOCSEE logo"
         className={styles.logo}
       />

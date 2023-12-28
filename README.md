@@ -35,7 +35,7 @@ Projekt został stworzony z wykorzystaniem CSS Modules do zarządzania stylami k
 1. Sklonuj repozytorium: `git clone https://github.com/Rockwood98/docsee.git` lub uruchom program Visual Studio Code i otwórz glówny folder aplikacji Docsee.
 2. Przejdź do katalogu projektu: `cd docsee`
 3. Zainstaluj zależności: `npm install`
-4. Uruchom aplikację: `npm start`
+4. Uruchom aplikację: `npm run dev`
 
 ## Współautorzy
 

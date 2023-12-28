@@ -44,9 +44,9 @@ function DocsList() {
     );
   return (
     <>
-      <Button type="secondary-light">
+      {/* <Button type="secondary-light">
         <HiArrowsUpDown /> Sort
-      </Button>
+      </Button> */}
       <ul className={styles.docsList}>
         {docs.map((doc) => (
           <DocObject doc={doc} key={doc.id} />
