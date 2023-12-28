@@ -35,8 +35,7 @@
   .docInfo {
     display: grid;
     grid-template-columns: 1fr;
-    /* align-items: end; */
-    width: 50%;
+    align-items: center;
     gap: 1rem;
     margin: 0 auto;
   }
